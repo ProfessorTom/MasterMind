@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9703AADC224D969000382ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703AADB224D969000382ECA /* AppDelegate.swift */; };
+		9703AADE224D969000382ECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703AADD224D969000382ECA /* ViewController.swift */; };
+		9703AAE0224D969100382ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9703AADF224D969100382ECA /* Assets.xcassets */; };
+		9703AAE3224D969100382ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9703AAE1224D969100382ECA /* Main.storyboard */; };
+		9703AAEF224D969100382ECA /* MasterMindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703AAEE224D969100382ECA /* MasterMindTests.swift */; };
+		9703AAFA224D969100382ECA /* MasterMindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9703AAF9224D969100382ECA /* MasterMindUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9703AAEB224D969100382ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9703AAD0224D969000382ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9703AAD7224D969000382ECA;
+			remoteInfo = MasterMind;
+		};
+		9703AAF6224D969100382ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9703AAD0224D969000382ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9703AAD7224D969000382ECA;
+			remoteInfo = MasterMind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9703AAD8224D969000382ECA /* MasterMind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterMind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9703AADB224D969000382ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9703AADD224D969000382ECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9703AADF224D969100382ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9703AAE2224D969100382ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9703AAE4224D969100382ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9703AAE5224D969100382ECA /* MasterMind.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MasterMind.entitlements; sourceTree = "<group>"; };
+		9703AAEA224D969100382ECA /* MasterMindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterMindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9703AAEE224D969100382ECA /* MasterMindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterMindTests.swift; sourceTree = "<group>"; };
+		9703AAF0224D969100382ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9703AAF5224D969100382ECA /* MasterMindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterMindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9703AAF9224D969100382ECA /* MasterMindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterMindUITests.swift; sourceTree = "<group>"; };
+		9703AAFB224D969100382ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9703AAD5224D969000382ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9703AAE7224D969100382ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9703AAF2224D969100382ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9703AACF224D969000382ECA = {
+			isa = PBXGroup;
+			children = (
+				9703AADA224D969000382ECA /* MasterMind */,
+				9703AAED224D969100382ECA /* MasterMindTests */,
+				9703AAF8224D969100382ECA /* MasterMindUITests */,
+				9703AAD9224D969000382ECA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9703AAD9224D969000382ECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9703AAD8224D969000382ECA /* MasterMind.app */,
+				9703AAEA224D969100382ECA /* MasterMindTests.xctest */,
+				9703AAF5224D969100382ECA /* MasterMindUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9703AADA224D969000382ECA /* MasterMind */ = {
+			isa = PBXGroup;
+			children = (
+				9703AADB224D969000382ECA /* AppDelegate.swift */,
+				9703AADD224D969000382ECA /* ViewController.swift */,
+				9703AADF224D969100382ECA /* Assets.xcassets */,
+				9703AAE1224D969100382ECA /* Main.storyboard */,
+				9703AAE4224D969100382ECA /* Info.plist */,
+				9703AAE5224D969100382ECA /* MasterMind.entitlements */,
+			);
+			path = MasterMind;
+			sourceTree = "<group>";
+		};
+		9703AAED224D969100382ECA /* MasterMindTests */ = {
+			isa = PBXGroup;
+			children = (
+				9703AAEE224D969100382ECA /* MasterMindTests.swift */,
+				9703AAF0224D969100382ECA /* Info.plist */,
+			);
+			path = MasterMindTests;
+			sourceTree = "<group>";
+		};
+		9703AAF8224D969100382ECA /* MasterMindUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9703AAF9224D969100382ECA /* MasterMindUITests.swift */,
+				9703AAFB224D969100382ECA /* Info.plist */,
+			);
+			path = MasterMindUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9703AAD7224D969000382ECA /* MasterMind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9703AAFE224D969100382ECA /* Build configuration list for PBXNativeTarget "MasterMind" */;
+			buildPhases = (
+				9703AAD4224D969000382ECA /* Sources */,
+				9703AAD5224D969000382ECA /* Frameworks */,
+				9703AAD6224D969000382ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MasterMind;
+			productName = MasterMind;
+			productReference = 9703AAD8224D969000382ECA /* MasterMind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9703AAE9224D969100382ECA /* MasterMindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9703AB01224D969100382ECA /* Build configuration list for PBXNativeTarget "MasterMindTests" */;
+			buildPhases = (
+				9703AAE6224D969100382ECA /* Sources */,
+				9703AAE7224D969100382ECA /* Frameworks */,
+				9703AAE8224D969100382ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9703AAEC224D969100382ECA /* PBXTargetDependency */,
+			);
+			name = MasterMindTests;
+			productName = MasterMindTests;
+			productReference = 9703AAEA224D969100382ECA /* MasterMindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9703AAF4224D969100382ECA /* MasterMindUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9703AB04224D969100382ECA /* Build configuration list for PBXNativeTarget "MasterMindUITests" */;
+			buildPhases = (
+				9703AAF1224D969100382ECA /* Sources */,
+				9703AAF2224D969100382ECA /* Frameworks */,
+				9703AAF3224D969100382ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9703AAF7224D969100382ECA /* PBXTargetDependency */,
+			);
+			name = MasterMindUITests;
+			productName = MasterMindUITests;
+			productReference = 9703AAF5224D969100382ECA /* MasterMindUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9703AAD0224D969000382ECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Tomas Gallucci";
+				TargetAttributes = {
+					9703AAD7224D969000382ECA = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					9703AAE9224D969100382ECA = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 9703AAD7224D969000382ECA;
+					};
+					9703AAF4224D969100382ECA = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 9703AAD7224D969000382ECA;
+					};
+				};
+			};
+			buildConfigurationList = 9703AAD3224D969000382ECA /* Build configuration list for PBXProject "MasterMind" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9703AACF224D969000382ECA;
+			productRefGroup = 9703AAD9224D969000382ECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9703AAD7224D969000382ECA /* MasterMind */,
+				9703AAE9224D969100382ECA /* MasterMindTests */,
+				9703AAF4224D969100382ECA /* MasterMindUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9703AAD6224D969000382ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9703AAE0224D969100382ECA /* Assets.xcassets in Resources */,
+				9703AAE3224D969100382ECA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9703AAE8224D969100382ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9703AAF3224D969100382ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9703AAD4224D969000382ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9703AADE224D969000382ECA /* ViewController.swift in Sources */,
+				9703AADC224D969000382ECA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9703AAE6224D969100382ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9703AAEF224D969100382ECA /* MasterMindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9703AAF1224D969100382ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9703AAFA224D969100382ECA /* MasterMindUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9703AAEC224D969100382ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9703AAD7224D969000382ECA /* MasterMind */;
+			targetProxy = 9703AAEB224D969100382ECA /* PBXContainerItemProxy */;
+		};
+		9703AAF7224D969100382ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9703AAD7224D969000382ECA /* MasterMind */;
+			targetProxy = 9703AAF6224D969100382ECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9703AAE1224D969100382ECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9703AAE2224D969100382ECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9703AAFC224D969100382ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9703AAFD224D969100382ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9703AAFF224D969100382ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MasterMind/MasterMind.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MasterMind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.professortom.MasterMind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9703AB00224D969100382ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MasterMind/MasterMind.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MasterMind/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.professortom.MasterMind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9703AB02224D969100382ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MasterMindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.professortom.MasterMindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterMind.app/Contents/MacOS/MasterMind";
+			};
+			name = Debug;
+		};
+		9703AB03224D969100382ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MasterMindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.professortom.MasterMindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterMind.app/Contents/MacOS/MasterMind";
+			};
+			name = Release;
+		};
+		9703AB05224D969100382ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MasterMindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.professortom.MasterMindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MasterMind;
+			};
+			name = Debug;
+		};
+		9703AB06224D969100382ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MasterMindUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.professortom.MasterMindUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MasterMind;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9703AAD3224D969000382ECA /* Build configuration list for PBXProject "MasterMind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9703AAFC224D969100382ECA /* Debug */,
+				9703AAFD224D969100382ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9703AAFE224D969100382ECA /* Build configuration list for PBXNativeTarget "MasterMind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9703AAFF224D969100382ECA /* Debug */,
+				9703AB00224D969100382ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9703AB01224D969100382ECA /* Build configuration list for PBXNativeTarget "MasterMindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9703AB02224D969100382ECA /* Debug */,
+				9703AB03224D969100382ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9703AB04224D969100382ECA /* Build configuration list for PBXNativeTarget "MasterMindUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9703AB05224D969100382ECA /* Debug */,
+				9703AB06224D969100382ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9703AAD0224D969000382ECA /* Project object */;
+}
