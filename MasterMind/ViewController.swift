@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import GameplayKit
 
 class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
     
@@ -51,6 +52,20 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     
     func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
         return false
+    }
+    
+    func startGame() {
+        guess.stringValue = ""
+        guesses.removeAll()
+        
+        var numbers = Array(0...9)
+        numbers = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: numbers) as! [Int]
+        
+        for _ in 0 ..< 4 {
+            answer.append(String(numbers.removeLast()))
+        }
+        
+        tableView.reloadData()
     }
     
 }
