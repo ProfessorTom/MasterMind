@@ -21,6 +21,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        startGame()
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
