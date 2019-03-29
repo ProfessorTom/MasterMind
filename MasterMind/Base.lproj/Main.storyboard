@@ -723,6 +723,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="submitGuess:" target="XfG-lQ-9wD" id="QpA-LA-kxa"/>
+                                </connections>
                             </button>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0a-aa-5uO">
                                 <rect key="frame" x="0.0" y="0.0" width="250" height="209"/>
@@ -813,6 +816,10 @@
                                                     </prototypeCellViews>
                                                 </tableColumn>
                                             </tableColumns>
+                                            <connections>
+                                                <outlet property="dataSource" destination="XfG-lQ-9wD" id="Xea-iF-af2"/>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="aiU-IZ-iMP"/>
+                                            </connections>
                                         </tableView>
                                     </subviews>
                                 </clipView>
@@ -843,6 +850,10 @@
                             <constraint firstAttribute="bottom" secondItem="N0a-aa-5uO" secondAttribute="bottom" id="xf8-cf-DaB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="guess" destination="isL-yq-d3w" id="bPD-Cn-foh"/>
+                        <outlet property="tableView" destination="h07-dJ-CDJ" id="Ypd-r4-xJe"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
