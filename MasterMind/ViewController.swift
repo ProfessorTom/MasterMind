@@ -64,8 +64,6 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
             vw.textField?.stringValue = result(for: guesses[row])
         }
         
-        print("answer: \(answer)")
-        
         return vw
     }
     
@@ -85,6 +83,8 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         }
         
         tableView.reloadData()
+        
+        print("answer: \(answer)")
     }
     
 }
