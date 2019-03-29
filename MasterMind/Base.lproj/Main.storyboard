@@ -711,9 +711,6 @@
                         <subviews>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="isL-yq-d3w">
                                 <rect key="frame" x="36" y="228" width="100" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="oEt-xz-Xb2"/>
-                                </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="CUA-nb-xql">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -768,9 +765,9 @@
                                                                 </textField>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="LeC-I3-srR" firstAttribute="centerY" secondItem="fdY-aG-5IY" secondAttribute="centerY" id="5iM-Hr-17F"/>
-                                                                <constraint firstItem="LeC-I3-srR" firstAttribute="centerX" secondItem="fdY-aG-5IY" secondAttribute="centerX" id="BV0-Ac-gav"/>
-                                                                <constraint firstItem="LeC-I3-srR" firstAttribute="leading" secondItem="fdY-aG-5IY" secondAttribute="leading" constant="2" id="juT-a8-g46"/>
+                                                                <constraint firstItem="LeC-I3-srR" firstAttribute="centerX" secondItem="fdY-aG-5IY" secondAttribute="centerX" id="2gF-Zd-T0W"/>
+                                                                <constraint firstItem="LeC-I3-srR" firstAttribute="leading" secondItem="fdY-aG-5IY" secondAttribute="leading" constant="2" id="E7e-zn-vaC"/>
+                                                                <constraint firstItem="LeC-I3-srR" firstAttribute="centerY" secondItem="fdY-aG-5IY" secondAttribute="centerY" id="Lu6-as-dpE"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="textField" destination="LeC-I3-srR" id="vG9-pm-3oE"/>
@@ -805,9 +802,9 @@
                                                                 </textField>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="WiX-jc-PPn" firstAttribute="leading" secondItem="JdV-rF-csp" secondAttribute="leading" constant="2" id="KmC-4Z-wp1"/>
-                                                                <constraint firstItem="WiX-jc-PPn" firstAttribute="centerY" secondItem="JdV-rF-csp" secondAttribute="centerY" id="fPz-Ip-MkZ"/>
-                                                                <constraint firstItem="WiX-jc-PPn" firstAttribute="centerX" secondItem="JdV-rF-csp" secondAttribute="centerX" id="sDg-sg-eK7"/>
+                                                                <constraint firstItem="WiX-jc-PPn" firstAttribute="centerX" secondItem="JdV-rF-csp" secondAttribute="centerX" id="CdQ-St-4fS"/>
+                                                                <constraint firstItem="WiX-jc-PPn" firstAttribute="centerY" secondItem="JdV-rF-csp" secondAttribute="centerY" id="DVk-uo-D67"/>
+                                                                <constraint firstItem="WiX-jc-PPn" firstAttribute="leading" secondItem="JdV-rF-csp" secondAttribute="leading" constant="2" id="iaF-iL-2V0"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="textField" destination="WiX-jc-PPn" id="neW-sS-d5C"/>
@@ -819,9 +816,6 @@
                                         </tableView>
                                     </subviews>
                                 </clipView>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="3dG-0h-0ob"/>
-                                </constraints>
                                 <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="T6Y-NQ-ylX">
                                     <rect key="frame" x="1" y="192" width="248" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
@@ -837,16 +831,16 @@
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Fe3-Y7-6wX" firstAttribute="leading" secondItem="isL-yq-d3w" secondAttribute="trailing" constant="22" id="3dL-H5-9SB"/>
-                            <constraint firstAttribute="trailing" secondItem="Fe3-Y7-6wX" secondAttribute="trailing" constant="46" id="66a-ql-udX"/>
-                            <constraint firstAttribute="trailing" secondItem="N0a-aa-5uO" secondAttribute="trailing" id="Izi-CF-qYg"/>
-                            <constraint firstItem="isL-yq-d3w" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="PbF-zP-9d5"/>
-                            <constraint firstItem="N0a-aa-5uO" firstAttribute="top" secondItem="isL-yq-d3w" secondAttribute="bottom" constant="19" id="dmp-dO-3U2"/>
-                            <constraint firstItem="isL-yq-d3w" firstAttribute="top" secondItem="Fe3-Y7-6wX" secondAttribute="top" id="gHD-Xt-klo"/>
-                            <constraint firstItem="N0a-aa-5uO" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="hQI-I7-bWb"/>
-                            <constraint firstItem="isL-yq-d3w" firstAttribute="centerY" secondItem="Fe3-Y7-6wX" secondAttribute="centerY" id="jMp-rv-bBe"/>
-                            <constraint firstItem="isL-yq-d3w" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="36" id="m0r-Xc-lTJ"/>
-                            <constraint firstAttribute="bottom" secondItem="N0a-aa-5uO" secondAttribute="bottom" id="uhu-AF-xZO"/>
+                            <constraint firstItem="Fe3-Y7-6wX" firstAttribute="baseline" secondItem="isL-yq-d3w" secondAttribute="firstBaseline" id="1ij-m8-83t"/>
+                            <constraint firstItem="isL-yq-d3w" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="36" id="3hC-T7-6fR"/>
+                            <constraint firstItem="isL-yq-d3w" firstAttribute="top" secondItem="Fe3-Y7-6wX" secondAttribute="top" id="FCT-Fh-pqZ"/>
+                            <constraint firstAttribute="trailing" secondItem="N0a-aa-5uO" secondAttribute="trailing" id="Hf5-z1-ZMH"/>
+                            <constraint firstAttribute="trailing" secondItem="Fe3-Y7-6wX" secondAttribute="trailing" constant="46" id="Kdk-5A-eKp"/>
+                            <constraint firstItem="N0a-aa-5uO" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Sq0-cT-I8O"/>
+                            <constraint firstItem="N0a-aa-5uO" firstAttribute="top" secondItem="isL-yq-d3w" secondAttribute="bottom" constant="19" id="jSi-sH-T4L"/>
+                            <constraint firstItem="isL-yq-d3w" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="jwg-kk-5Nf"/>
+                            <constraint firstItem="Fe3-Y7-6wX" firstAttribute="leading" secondItem="isL-yq-d3w" secondAttribute="trailing" constant="22" id="tmo-6R-yv1"/>
+                            <constraint firstAttribute="bottom" secondItem="N0a-aa-5uO" secondAttribute="bottom" id="xf8-cf-DaB"/>
                         </constraints>
                     </view>
                 </viewController>
