@@ -43,6 +43,8 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     @IBAction func submitGuess(_ sender: Any) {
         // first check for 4 unique characters
         let guessString = guess.stringValue
+        guess.stringValue = ""
+        
         guard Set(guessString).count == 4 else {return}
         
         // second, ensure there are no non-digit characters
