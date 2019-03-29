@@ -35,6 +35,30 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     }
 
     @IBAction func submitGuess(_ sender: Any) {
+        // first check for 4 unique characters
+        let guessString = guess.stringValue
+        guard Set(guessString).count == 4 else {return}
+        
+        // second, ensure there are no non-digit characters
+        let badCharacters = CharacterSet(charactersIn: "0123456789").inverted
+        guard guessString.rangeOfCharacter(from: badCharacters) == nil else {return}
+        
+        guesses.insert(guessString, at: 0)
+        tableView.insertRows(at: IndexSet(integer: 0), withAnimation: .slideDown)
+        
+        // did the player win?
+        let resultString = result(for: guessString)
+        
+        if resultString.contains("4b") {
+            let alert = NSAlert()
+            alert.messageText = "You win!"
+            alert.informativeText = "Congratulations! Click OK to play again."
+            
+            alert.runModal()
+            
+            startGame()
+        }
+        
     }
     
     func result(for guess: String) -> String {
