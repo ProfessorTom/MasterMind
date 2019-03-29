@@ -42,7 +42,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        guard let vw - tableView.makeView(withIdentifier: tableColumn?.identifier, owner: self) as? NSTableCellView else {return nil}
+        guard let vw = tableView.makeView(withIdentifier: tableColumn!.identifier, owner: self) as? NSTableCellView else {return nil}
         
         if tableColumn?.title == "Guess" {
             vw.textField?.stringValue = result(for: guesses[row])
