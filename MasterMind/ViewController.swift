@@ -13,6 +13,12 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     
     var answer = ""
     var guesses = [String]()
+    
+    var tableCellAnimations = [
+        NSTableView.AnimationOptions.slideLeft,
+        NSTableView.AnimationOptions.slideRight,
+    ]
+    var animationIndex = 0
 
     @IBOutlet var tableView: NSTableView!
     @IBOutlet var guess: NSTextField!
@@ -44,7 +50,8 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         guard guessString.rangeOfCharacter(from: badCharacters) == nil else {return}
         
         guesses.insert(guessString, at: 0)
-        tableView.insertRows(at: IndexSet(integer: 0), withAnimation: .slideDown)
+        
+        tableView.insertRows(at: IndexSet(integer: 0), withAnimation: getNextAnimationOption())
         
         // did the player win?
         let resultString = result(for: guessString)
@@ -59,6 +66,17 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
             startGame()
         }
         
+    }
+    
+    func getNextAnimationOption() -> NSTableView.AnimationOptions {
+        animationIndex += 1
+        
+        if ( (animationIndex % tableCellAnimations.count) == 0) {
+            animationIndex = 0
+        }
+        
+//        print("animationIndex: \(animationIndex)")
+        return tableCellAnimations[animationIndex]
     }
     
     func result(for guess: String) -> String {
